@@ -17,4 +17,10 @@ contract Example2 {
     function getCounter() public view returns (uint) {
         return counter; //return the number of strings
     }
+    function getSumofCounter() public view returns (uint) {
+        return counter; //return the number of strings
+    }
+    function getCounterStatus() public view returns (uint) {
+        return counter; //return the number of strings
+    }
 }
