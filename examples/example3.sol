@@ -28,6 +28,10 @@ contract Example3 {
         return accounts[nr].amount;
     }
 
+    function getEditAmountValue(uint nr) public view returns (uint) { //returns the amount saved for the position "nr"
+        return accountsValue[nr].amountValue;
+    }
+
     function set(uint nr, string memory addr) public returns (bool) { //sets an amount for an address (only possible if the sender of the msg is the owner)
         if(owner == msg.sender) {
             accounts[counter++] = Account(addr, nr);
